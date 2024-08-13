@@ -13,9 +13,9 @@ entrada y salida de datos, math.h es la libreria
 que permite operaciones matemáticas
 */
 
-
 #include <stdio.h>
 #include <math.h>
+#include <stdlib.h>
 
 /*Declaramos las variables a utilizar*/
 
@@ -41,15 +41,19 @@ int main(){
    /*Calculamos el resultado de a + b*/
    printf("\n %d + %d = %d\n", a, b, a + b);
 
+
+   /*
+   Esperamos a que el usuario presione una tecla para terminar
+   */
+  fflush(stdin);
+
+   system("pause");
+  
    /*
    Termina la ejecución del programa
    */
    return 0;
    
-
-
-
-
 }
 
 
