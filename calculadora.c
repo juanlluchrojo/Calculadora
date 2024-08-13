@@ -17,14 +17,14 @@ que permite operaciones matemáticas
 #include <math.h>
 #include <stdlib.h>
 
-/*Declaramos las variables a utilizar*/
+//Declaramos las variables a utilizar
 
 int a;
 int b;
 int resultado;
 
 
-/*Función Main*/
+//Función Main
 int main(){
 
     /*
@@ -38,20 +38,21 @@ int main(){
    printf("Introduzca un segundo numero entero: ");
    scanf("%d",&b);
 
-   /*Calculamos el resultado de a + b*/
+   //Calculamos el resultado de a + b
    printf("\n %d + %d = %d\n", a, b, a + b);
-
-
-   /*
-   Esperamos a que el usuario presione una tecla para terminar
-   */
-  fflush(stdin);
+   
+   
+   //Limpiamos el buffer de entrada
+   
+   fflush(stdin);
+   
+   //Pausa del sistema para terminar
+   
 
    system("pause");
   
-   /*
-   Termina la ejecución del programa
-   */
+   //Termina la ejecución del programa
+   
    return 0;
    
 }
